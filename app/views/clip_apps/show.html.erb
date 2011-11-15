@@ -1,0 +1,58 @@
+<p>
+  <b>Clip list:</b>
+  <%=h @clip_app.clip_list_id %>
+</p>
+
+<p>
+  <b>Medium:</b>
+  <%=h @clip_app.medium_id %>
+</p>
+
+<p>
+  <b>User:</b>
+  <%=h @clip_app.user_id %>
+</p>
+
+<p>
+  <b>Time in:</b>
+  <%=h @clip_app.time_in %>
+</p>
+
+<p>
+  <b>Time out:</b>
+  <%=h @clip_app.time_out %>
+</p>
+
+<p>
+  <b>filename:</b>
+  <%=h @clip_app.filename %>
+</p>
+
+<p>
+  <b>Shot number:</b>
+  <%=h @clip_app.shot_number %>
+</p>
+
+<p>
+  <b>Description:</b>
+  <%=h @clip_app.description %>
+</p>
+
+<p>
+  <b>Deleted:</b>
+  <%=h @clip_app.deleted %>
+</p>
+
+<p>
+  <b>Created at:</b>
+  <%=h @clip_app.created_at %>
+</p>
+
+<p>
+  <b>Updated:</b>
+  <%=h @clip_app.updated %>
+</p>
+
+
+<%= link_to 'Edit', edit_clip_app_path(@clip_app) %> |
+<%= link_to 'Back', clip_apps_path %>

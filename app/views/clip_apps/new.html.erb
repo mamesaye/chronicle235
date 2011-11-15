@@ -1,0 +1,56 @@
+<h1>New clip_app</h1>
+
+<% form_for(@clip_app) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :clip_list_id %><br />
+    <%= f.text_field :clip_list_id %>
+  </p>
+  <p>
+    <%= f.label :medium_id %><br />
+    <%= f.text_field :medium_id %>
+  </p>
+  <p>
+    <%= f.label :user_id %><br />
+    <%= f.text_field :user_id %>
+  </p>
+  <p>
+    <%= f.label :time_in %><br />
+    <%= f.text_field :time_in %>
+  </p>
+
+  <p>
+    <%= f.label :time_out %><br />
+    <%= f.text_field :time_out %>
+  </p>
+ <p>
+    <%= f.label :filename %><br />
+    <%= f.text_field :filename %>
+  </p>
+ <p>
+    <%= f.label :shot_number %><br />
+    <%= f.text_field :shot_number %>
+  </p>
+  <p>
+    <%= f.label :description %><br />
+    <%= f.text_field :description %>
+  </p>
+  <p>
+    <%= f.label :deleted %><br />
+    <%= f.check_box :deleted %>
+  </p>
+  <p>
+    <%= f.label :created_at %><br />
+    <%= f.datetime_select :created_at %>
+  </p>
+  <p>
+    <%= f.label :updated %><br />
+    <%= f.datetime_select :updated %>
+  </p>
+  <p>
+    <%= f.submit 'Create' %>
+  </p>
+<% end %>
+
+<%= link_to 'Back', clip_apps_path %>

@@ -1,0 +1,39 @@
+<h1>Listing clip_apps</h1>
+
+<table>
+  <tr>
+    <th>Clip list</th>
+    <th>Medium</th>
+    <th>User</th>
+    <th>Time in</th>
+    <th>Time out</th>
+    <th>Sot number</th>
+    <th>Description</th>
+    <th>Deleted</th>
+    <th>Created at</th>
+    <th>Updated</th>
+  </tr>
+
+<% @clip_apps.each do |clip_app| %>
+  <tr>
+    <td><%=h clip_app.clip_list_id %></td>
+    <td><%=h clip_app.medium_id %></td>
+    <td><%=h clip_app.user_id %></td>
+    <td><%=h clip_app.time_in %></td>
+    <td><%=h clip_app.time_out %></td>
+    <td><%=h clip_app.filename %></td>
+    <td><%=h clip_app.shot_number %></td>
+    <td><%=h clip_app.description %></td>
+    <td><%=h clip_app.deleted %></td>
+    <td><%=h clip_app.created_at %></td>
+    <td><%=h clip_app.updated %></td>
+    <td><%= link_to 'Show', clip_app %></td>
+    <td><%= link_to 'Edit', edit_clip_app_path(clip_app) %></td>
+    <td><%= link_to 'Destroy', clip_app, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New clip_app', new_clip_app_path %>

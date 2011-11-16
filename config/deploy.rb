@@ -2,7 +2,7 @@
 set :scm, :git	   # Or: `accurev`, `bzr`, `cvs`, `darcs`, `git`, `mercurial`, `perforce`, `subversion` or `none`
 set :branch, "master" 
 set :scm_user, 'mamesaye'
-set :scm_passphrase, 'moustapha'
+set :scm_passphrase, ''
 set :repository,  "git@github.com:mamesaye/chronicle235.git"
 set :local_repository, "."
 set :deploy_via, :remote_cache
@@ -28,8 +28,8 @@ set :deploy_to, "/home/angom/rails_projects235/chronicle235"
 #set :deploy_to, "/home/angom/rails_projects/chronicle"
 
 #------------servers------------------------------------
-#set :domain, "chronicle.mmfa.internal"
-set :chronicle, "chronicle.mmfa.internal"
+#set :domain, "chronicle"
+set :chronicle, "chronicle"
 role :app, chronicle
 role :web, chronicle
 role :db, chronicle, :primary => true
@@ -69,6 +69,4 @@ namespace :deploy do
 
 #   end
 # end
-#38.127.157.185 me public IP or local 10.1.4.22
-#192.168.1.1 chronical
-#localhost:3000/contacts
+

@@ -4,7 +4,7 @@ development:
   adapter: postgresql
   database: rails_devel
   username: postgres
-  password: 123abc
+  password: 
   pool: 5
   timeout: 5000
 
